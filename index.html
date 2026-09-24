@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>WeatherBuddy</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>🌦️ WeatherBuddy</h1>
+        <p>Learn Weather. See Weather. Hear Weather.</p>
+    </header>
+
+    <main>
+
+        <section class="card">
+
+            <h2>🌤️ Enter Weather Forecast</h2>
+
+            <textarea
+                id="weatherInput"
+                placeholder="Example: It is raining heavily today."
+            ></textarea>
+
+            <div class="options">
+
+                <div>
+                    <label for="age">Select Age:</label>
+
+                    <select id="age">
+                        <option value="10-12">10–12 Years</option>
+                        <option value="13-17">13–17 Years</option>
+                        <option value="18+">18+ Years</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="language">Language:</label>
+
+                    <select id="language">
+                        <option value="en">English</option>
+                        <option value="ta">தமிழ்</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <div class="buttons">
+
+                <button onclick="generateWeather()">
+                    🌈 Generate Illustration
+                </button>
+
+                <button class="clear-btn" onclick="clearWeather()">
+                    🔄 Clear
+                </button>
+
+            </div>
+
+        </section>
+
+        <section class="card result">
+
+            <h2 id="weatherTitle">🌦️ Your Weather Illustration</h2>
+
+            <img
+                id="weatherImage"
+                src="https://images.unsplash.com/photo-1501630834273-4b5604d2ee31?w=900"
+                alt="Weather illustration"
+            >
+
+            <h3 id="condition">Enter a forecast to begin</h3>
+
+        </section>
+
+        <section class="card">
+
+            <h2>📚 Weather Explanation</h2>
+
+            <p id="explanation">
+                Your weather explanation will appear here.
+            </p>
+
+            <div class="buttons">
+
+                <button onclick="speakWeather()">
+                    🔊 Speak
+                </button>
+
+                <button class="stop-btn" onclick="stopSpeech()">
+                    ⏹️ Stop
+                </button>
+
+            </div>
+
+        </section>
+
+        <section class="card safety">
+
+            <h2>🛡️ Safety Tip</h2>
+
+            <p id="safetyTip">
+                Weather safety information will appear here.
+            </p>
+
+        </section>
+
+        <section class="card">
+
+            <h2>📖 Learn About Weather</h2>
+
+            <div class="facts">
+
+                <div>
+                    ☀️
+                    <b>Sunny</b>
+                    <p>The Sun gives us light and heat.</p>
+                </div>
+
+                <div>
+                    ☁️
+                    <b>Cloudy</b>
+                    <p>Clouds contain tiny water droplets or ice crystals.</p>
+                </div>
+
+                <div>
+                    🌧️
+                    <b>Rainy</b>
+                    <p>Rain happens when water droplets fall from clouds.</p>
+                </div>
+
+                <div>
+                    ⚡
+                    <b>Thunderstorm</b>
+                    <p>Thunderstorms can include rain, lightning and thunder.</p>
+                </div>
+
+                <div>
+                    💨
+                    <b>Windy</b>
+                    <p>Wind is moving air.</p>
+                </div>
+
+                <div>
+                    ❄️
+                    <b>Cold</b>
+                    <p>Cold weather means the temperature is low.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>🌦️ Weather Buddy | Educational Weather Learning App</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
